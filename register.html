@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+	<meta charset="utf-8">
+	<title>ToyModels GmbH Webshop</title>
+	<link rel="stylesheet" type="text/css" href="test.css"/>
+</head>
+<body>
+	<header>
+		<h1>Toy Models GmbH Webshop</h1>
+		<!--- Navigation -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a> </li>
+				<li><a href="register.html">Registrierung</a> </li>
+				<li><a href="basket.html">Warenkorb</a> </li>
+			</ul>
+		</nav>
+		<section>
+			<h4>Login</h4>
+			<form action="basket_logged.html">
+				<label for="customerId">Kundennummer:</label>
+				<input type="number" id="customerId">
+				<label for="userPassword">Passwort: </label>
+				<input id="userPassword" type="password" required>
+				<input type="submit" value="Einloggen">
+			</form>
+		</section>
+	</header>
+	<section>
+		<h2> Registrierung </h2>
+
+			<table>
+				<tr>
+					<td><label for="name">Name</label></td>
+					<td><input type="text" id="name"><br></td>
+
+				</tr>
+				<tr>
+					<td><label for="surname">Nachname</label></td>
+					<td><input type="text" id="surname"><br></td>
+				</tr>
+				<tr>
+					<td><label for="birthday">Geburtstag</label></td>
+					<td><input type="date" id="birthday"><br></td>
+				</tr>
+				<tr>
+				<td><label for="email">Email</label></td>
+				<td><input type="email" id="email" required><br></td>
+			</tr>
+			<tr>
+				<td><label for="password">Passwort</label></td>
+				<td><input id="userPassword" type="password" required></td>
+			</tr>
+				<tr>
+					<td><label for="status">Kundenart</label></td>
+					<td><select id="status">
+						<option value="e">Einzelhandel</option>
+						<option value="p">Privatkäufer</option>
+						<option value="s">Sonstiges</option>
+					</select><br><br></td>
+				</tr>
+
+				<tr>
+					<td><label for="newsletter">Newsletter abonnieren ?</label></td>
+					<td><input type="radio" name="newsletter" id="newsletter" value="Newsletter"><br></td>
+				</tr>
+			</table>
+			<form action="registrationcomplete.html">
+				<input type="submit" value="Absenden">
+			</form>
+
+
+
+	</body>
+			<footer>
+				<p>&copy; ToyModels GmbH 2018 | <a href="impressum.html">Impressum</a></p>
+			</footer>
+</html>

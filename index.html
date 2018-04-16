@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+	<meta charset="utf-8">
+	<title>ToyModels GmbH Webshop</title>
+	<link rel="stylesheet" type="text/css" href="test.css"/>
+</head>
+<body>
+	<header>
+
+
+		<h1>
+			<div class="logo">
+		<img alt="ToyModels" src="ToyModels.svg" height="200" >
+	</div>
+		Toy Models GmbH Webshop</h1>
+		<!--- Navigation -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a> </li>
+				<li><a href="register.html">Registrierung</a> </li>
+				<li><a href="basket.html">Warenkorb</a> </li>
+			</ul>
+		</nav>
+		<section>
+			<h4>Login</h4>
+			<form action="loggedin.html">
+				<label for="customerId">Kundennummer:</label>
+				<input type="number" id="customerId">
+				<label for="userPassword">Passwort: </label>
+				<input id="userPassword" type="password" required>
+				<input type="submit" value="Einloggen">
+			</form>
+		</section>
+	</header>
+	<hr>
+	<section>
+		<h2>Artikelsuche und Filter</h2>
+		<div>
+			<form action="search.html">
+				<input type="search">
+				<button>Suche</button>
+			</form>
+			<br>
+			<form action="filtered.html">
+				<select>
+					<option>Alle</option>
+					<option>Automobile</option>
+					<option>Eisenbahnen</option>
+					<option>Schiffe</option>
+					<option>Flugzeuge</option>
+				</select>
+				<input type="submit" value="Submit">
+			</form>
+		<!-- Die schönere Variante - aber mit Mini-JavaScript
+		<select onchange="location = this.value;">
+			<option value="index.html">Alle</option>
+		  <option value="filter/cars_no_l.html">Automobile</option>
+		  <option value="filter/trains_no_l.html">Eisenbahnen</option>
+		  <option value="filter/ships_no_l.html">Schiffe</option>
+		  <option value="filter/airplanes_no_l.html">Flugzeuge</option>
+		</select>
+	-->
+</div>
+<hr>
+</section>
+<!--- Artikelübersicht -->
+<section>
+	<h2>Alle Artikel</h2>
+	<div class="gallery">
+  <a target="_blank" href="Flugzeug.jpg">
+    <img src="Flugzeug.jpg" alt="Flugzeug" width="300" height="200">
+  </a>
+  <div class="desc">Ein Flugzeug, dass fliegen kann. 🛫</div>
+	<div class="preis">1000,00€</div>
+	<div class="warenkorbButton">
+		<form action="basket.html">
+			<button>In den Warenkorb</button>
+		</form>
+	</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Eisenbahn.jpg">
+    <img src="Eisenbahn.jpg" alt="Eisenbahn" width="300" height="200">
+  </a>
+  <div class="desc">Eine Eisenbahn, die fahren kann. 🚂</div>
+	<div class="preis">8000,00€</div>
+	<div class="warenkorbButton">
+		<form action="basket.html">
+			<button>In den Warenkorb</button>
+		</form>
+	</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Schiff.jpg">
+    <img src="Schiff.jpg" alt="Schiff" width="300" height="200">
+  </a>
+  <div class="desc">Eine Schiff, dass nie untergeht. ⛵</div>
+	<div class="preis">7000,00€</div>
+	<div class="warenkorbButton">
+		<form action="basket.html">
+			<button>In den Warenkorb</button>
+		</form>
+	</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Auto.jpg">
+    <img src="Auto.jpg" alt="Auto" width="300" height="200">
+  </a>
+  <div class="desc">Ein Auto. Brumbrumbrum 🚙</div>
+	<div class="preis">590,00€</div>
+	<div class="warenkorbButton">
+		<form action="basket.html">
+			<button>In den Warenkorb</button>
+		</form>
+	</div>
+</div>
+
+<!-- <section>
+	<h2>Alle Artikel</h2>
+	<table>
+		<tr>
+			<th>Nr</th>
+			<th></th>
+			<th>Bezeichnung</th>
+			<th>Beschreibung</th>
+			<th>Preis</th>
+			<th></th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td><img src="https://i0.wp.com/powie.de/wp-content/uploads/airplane.png?resize=128%2C128&ssl=1"></td>
+			<td>Flugzeug</td>
+			<td>Ein Flugzeug, dass fliegen kann. 🛫</td>
+			<td>1000,00€</td>
+			<td>
+				<form action="basket.html">
+					<button>In den Warenkorb</button>
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td><img src="https://78.media.tumblr.com/avatar_7c8f0125b392_128.pnj"></td>
+			<td>Eisenbahn</td>
+			<td>Eine Eisenbahn, die fahren kann. 🚂</td>
+			<td>8000,00€</td>
+			<td>
+				<form action="basket.html">
+					<button>In den Warenkorb</button>
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td><img src="http://www.rc-modellbau-schiffe.de/wbb2/wcf/images/avatars/80/1052-8068aee2e60f1673c0a16e0fd61f95aea6bde262-128.jpg"></td>
+			<td>Schiff</td>
+			<td>Eine Schiff, dass nie untergeht. ⛵</td>
+			<td>590,00€</td>
+			<td>
+				<form action="basket.html">
+					<button>In den Warenkorb</button>
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td><img src="http://www.modellauto-porzel.de/wp-content/uploads/2016/12/450772400_00_031-128x128.jpg"></td>
+			<td>Auto</td>
+			<td>Ein Auto. 🚙</td>
+			<td>70,00€</td>
+			<td>
+				<form action="basket.html">
+					<button>In den Warenkorb</button>
+				</form>
+			</td>
+		</tr>
+	</table>
+</section> -->
+</body>
+<div class="footer">
+	<p>&copy; ToyModels GmbH 2018 | <a href="impressum.html">Impressum</a></p>
+</div>
+</html>

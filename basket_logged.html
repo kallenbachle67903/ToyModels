@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+	<meta charset="utf-8">
+	<title>ToyModels GmbH Webshop</title>
+</head>
+<body>
+<header>
+	<h1>Toy Models GmbH Webshop</h1>
+	<!--- Navigation -->
+       <nav>
+         <ul>
+          <li><a href="index.html">Home</a> </li>
+          <li><a href="register.html">Registrierung</a> </li>
+          <li><a href="basket.html">Warenkorb</a> </li>
+        </ul>
+      </nav>
+      <section>
+        <h4>Sie sind eingeloggt</h4>
+        <form action="index.html">
+	        <p>Kunde: Graf Zahl</p>
+          <p>Kundennummer: 54748</p>
+	        <input type="submit" value="Ausloggen">
+				</form>
+		 </section>
+</header>
+<hr>
+<!--- Artikel im Warenkorb -->
+<section>
+	<h2>Artikel im Warenkorb</h2>
+	<table>
+		<tr>
+			<th>Nr</th>
+			<th>Bezeichnung</th>
+			<th>Beschreibung</th>
+			<th>Preis</th>
+      <th>Anzahl</th>
+			<th></th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Flugzeug</td>
+			<td>Ein Flugzeug, dass fliegen kann. 🛫</td>
+			<td>1000,00€</td>
+      <td>3</td>
+			<td>
+				<button>Artikel entfernen</button>
+			</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Eisenbahn</td>
+			<td>Eine Eisenbahn, die fahren kann. 🚂</td>
+			<td>8000,00€</td>
+      <td>1</td>
+			<td>
+				<button>Artikel entfernen</button>
+			</td>
+		</tr>
+	</table>
+
+  <table>
+		<tr>
+			<td>Bestellsumme (inkl. 19% MwSt)</td>
+      <td>11.000,00€</td>
+    </tr>
+      <td>Versandkosten</td>
+      <td>50,00€</td>
+    </tr>
+    <tr>
+      <td>Zu zahlender Betrag</td>
+			<td>11.050,00€</td>
+		</tr>
+	</table>
+  <form action="order_confirmed.html">  
+  <button>Bestellung abschicken</button>
+  </form>
+
+</section>
+</body>
+<footer>
+	<p>&copy; ToyModels GmbH 2018 | <a href="impressum.html">Impressum</a></p>
+</footer>
+</html>
